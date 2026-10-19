@@ -1,0 +1,25 @@
+name: SellAxe
+version: '${project.version}'
+main: me.sellaxe.SellAxePlugin
+api-version: '26.2'
+folia-supported: true
+description: Right-click any container with the Sell Axe to sell everything inside.
+depend: [Vault]
+softdepend: [EconomyShopGUI, EconomyShopGUI-Premium]
+
+commands:
+  sellaxe:
+    description: Give a Sell Axe or reload the config
+    usage: /sellaxe <give|reload>
+    aliases: [sa]
+
+permissions:
+  sellaxe.use:
+    description: Allows using the Sell Axe
+    default: true
+  sellaxe.give:
+    description: Allows /sellaxe give
+    default: op
+  sellaxe.reload:
+    description: Allows /sellaxe reload
+    default: op
