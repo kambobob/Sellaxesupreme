@@ -1,0 +1,37 @@
+# ---------------- SellAxe ----------------
+
+axe:
+  material: DIAMOND_AXE
+  name: "<gradient:gold:yellow><bold>Sell Axe"
+  lore:
+    - "<gray>Right-click a chest or any container"
+    - "<gray>to sell everything inside."
+  glow: true
+
+# Max number of ITEMS (not stacks) sold per right-click.
+# If a container has more, the rest stays inside - click again to sell more.
+max-items: 65000
+
+# Delay between sells per player, in milliseconds.
+cooldown-ms: 300
+
+# Multiplies every payout (1.0 = normal, 1.5 = +50%).
+price-multiplier: 1.0
+
+# Prices come from EconomyShopGUI automatically.
+# Only used for items EconomyShopGUI has no sell price for (plain items only).
+# Format is price PER ITEM, e.g.
+#   COBBLESTONE: 0.5
+fallback-prices: {}
+
+messages:
+  sold: "<green>Sold <white><items></white> items for <gold>$<money></gold>."
+  limit-reached: "<yellow>Hit the <white><max></white> item limit - right-click again to sell the rest."
+  nothing: "<red>There is nothing sellable in this container."
+  no-permission: "<red>You don't have permission to use the Sell Axe."
+  no-economy: "<red>No Vault economy found. Tell an admin."
+  pay-failed: "<red>The payment failed, nothing was sold."
+  gave: "<green>Gave <white><amount></white> Sell Axe to <white><player></white>."
+  received: "<green>You received a <gold>Sell Axe</gold>."
+  player-not-found: "<red>Player not found."
+  reloaded: "<green>SellAxe config reloaded."
