@@ -13,7 +13,7 @@
         <maven.compiler.release>25</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!-- Copy the exact folia-api version from your FoliaViewer pom.xml if this one doesn't resolve -->
-        <folia.version>26.2-R0.1-SNAPSHOT</folia.version>
+        <folia.version>26.2.build.7-beta</folia.version>
     </properties>
 
     <repositories>
